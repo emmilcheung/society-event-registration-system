@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="189dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Welcome"
+        android:textFontWeight="800"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/login_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_alignStart="@+id/login_title"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="22dp"
+        android:text="Login with your CU OnePass to experience more."
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_message"
+        android:layout_alignStart="@+id/login_message"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="36dp"
+        android:background="#AE2020"
+        android:backgroundTint="#AA3838"
+        android:text="Log in"
+        android:textAllCaps="false" />
+</RelativeLayout>

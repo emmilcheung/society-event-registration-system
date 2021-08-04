@@ -1,0 +1,5 @@
+.survey_header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px #000;
+}

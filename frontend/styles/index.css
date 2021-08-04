@@ -1,0 +1,251 @@
+.header {
+  position: relative;
+  background: url(https://events.keep.edu.hk/gcms2017/wp-content/uploads/2017/07/1_University-Main-Entrance-e1500040575763-1024x448.jpg)
+    no-repeat center 45%;
+  background-size: 100% 170px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 0;
+  overflow: hidden;
+  color: rgba(236, 230, 230, 0.952);
+  height: 300px;
+  min-height: 170px;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  filter: blur(2px) brightness(80%);
+  background: inherit;
+}
+
+.header .self-intro {
+  position: absolute;
+  text-align: left;
+  padding: 20px;
+  bottom: 15%;
+  left: 20%;
+}
+.event_board {
+  color: var(--card-text);
+  background-color: var(--card-bg);
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  color: black;
+}
+
+.board_header {
+  padding: 1rem 1.25rem;
+  border-bottom: 3px solid var(--main-bg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.board_header_left > h2 {
+  font-size: clamp(16px, 3vw, 22px);
+}
+
+.hero-nav-content_container__3C3mK > nav {
+  border-bottom: 1px solid var(--border-primary);
+  color: var(--text-secondary);
+  background-color: #ffffff;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hero-nav-content_container__3C3mK > nav::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-nav-content_container__3C3mK > nav > ul {
+  display: flex;
+}
+
+.hero-nav-content_container__3C3mK > nav > ul {
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-nav-content_container__3C3mK > nav > ul > li {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hero-nav-content_container__3C3mK > nav > ul > li > a {
+  cursor: pointer;
+  display: inline-block;
+  color: inherit;
+  padding: calc(1.275rem + 0.3vw) 1rem calc(1.2625rem + 0.15vw);
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.hero-nav-content_container__3C3mK
+  > nav
+  > ul
+  > li
+  > a.hero-nav-content_active__3G2k7 {
+  font-weight: 700;
+  border-bottom: 2px solid var(--text-secondary);
+}
+
+@media (min-width: 1200px) {
+  .hero-nav-content_container__3C3mK > nav > ul > li > a {
+    padding: 1.5rem 1rem 1.375rem;
+  }
+}
+
+.body_container {
+  color: var(--card-text);
+  background-color: var(--card-bg);
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  padding: calc(1.325rem + 0.9vw) calc(1.325rem + 0.9vw) calc(1.375rem + 1.5vw);
+}
+
+.board_body {
+  width: 100%;
+  box-sizing: border-box;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1em;
+}
+
+.event_board .date_header {
+  border-bottom-width: 1px;
+  font-weight: 700;
+}
+
+.board_body .date_header td {
+  padding: 8px 4px;
+  background: none;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.board_body .table_item.mobile {
+  display: none;
+}
+
+.board_body .table_item > td.details {
+  vertical-align: baseline;
+  line-height: 1.6;
+  transition: background-color 0.1s cubic-bezier(1, 0, 0, 1);
+  padding: 12px 4px;
+}
+
+.board_body .table_item .details_flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.board_body .table_item .details_flex .title :first-child {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.board_body .table_item .details_flex .other {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.board_body .table_item td {
+  padding: 20px 0;
+}
+
+/* Search */
+.filter {
+  margin: 0;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+}
+
+.filter .choices {
+  width: 100%;
+  display: grid;
+  /* align-items: flex-start;
+  justify-content: space-around; */
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 1rem;
+  color: var(--card-text);
+  margin-top: 2vh;
+}
+
+.filter .choices .all,
+.filter .choices .key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 3vh;
+  cursor: pointer;
+  margin: 5px auto;
+}
+
+.all .arrow-up,
+.key .arrow-up {
+  display: none;
+  margin-top: 5px;
+}
+
+.all.active,
+.key.active {
+  font-weight: 700;
+  color: #4377e7;
+}
+
+.all.active .arrow-up,
+.key.active .arrow-up {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 6px solid var(--card-text);
+}
+
+.fadeOut{
+     opacity:0;
+     width:0;
+     height:0;
+     transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+
+}
+.fadeIn{
+     opacity:1;
+     width:100px;
+     height:100px;
+     transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+
+}
+
+@media (max-width: 767.55px) {
+  .body_container {
+    padding: calc(1.325rem + 0.9vw) 0 calc(1.375rem + 1.5vw);
+  }
+  .board_body .table_item.mobile {
+    display: inherit;
+  }
+  .board_body .table_item.pc {
+    display: none;
+  }
+}

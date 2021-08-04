@@ -1,0 +1,39 @@
+{
+  "name": "test-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.9.4",
+    "firebase": "^8.0.0",
+    "firebase-admin": "^9.3.0",
+    "google-map-react": "^2.1.9",
+    "google-maps-react": "^2.0.6",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.1",
+    "moment": "^2.29.1",
+    "next": "^10.0.8",
+    "next-auth": "^3.11.2",
+    "nookies": "^2.5.0",
+    "qrcode.react": "^1.0.1",
+    "react": "^17.0.1",
+    "react-chartjs-2": "^2.11.1",
+    "react-color": "^2.19.3",
+    "react-dom": "^17.0.1",
+    "react-notifications-menu": "^1.0.1",
+    "survey-creator": "^1.8.35",
+    "survey-react": "^1.8.35",
+    "surveyjs-widgets": "^1.8.35",
+    "swr": "^0.3.8"
+  }
+}

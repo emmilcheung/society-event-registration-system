@@ -1,0 +1,73 @@
+.recommendation {
+    background-color: white;
+}
+
+.recommendation_container {
+    display: grid;
+    grid-template-rows: -webkit-max-content;
+    grid-template-rows: max-content;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.recommendation_container > ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.recommendation_container > h1 {
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+}
+
+.recommendation_container li.recommendation_card {
+    cursor: pointer;
+    margin-right: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.recommendation_container li.recommendation_card:hover {
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.2);
+}
+
+.recommendation_container li.recommendation_card > img {
+    background-color: white;
+    border-radius: 30px 30px 0 0;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.recommendation_container li.recommendation_card .recommendation_description {
+    padding: 10px 20px 20px ;
+}
+
+.recommendation_container li.recommendation_card .recommendation_description .card-tag {
+    width: 60px;
+    max-width: 100px;
+    padding: 0.2rem 0.5rem;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #505f79;
+    color: #fff;
+}
+
+.recommendation_container li.recommendation_card .recommendation_description > h4{
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recommendation_container li.recommendation_card .recommendation_description > p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

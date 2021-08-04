@@ -1,0 +1,61 @@
+### backend
+/backend/fyp-env
+/backend/server/img/
+/backend/server/.vscode
+/backend/ms-identity-python-webapp-master
+/backend/server/event.temp
+/backend/server/venv.sh
+/backend/server/__pycache__/
+/backend/server/*/__pycache__/
+/backend/*.pyc
+
+### frontend
+# dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend.pnp.js
+
+# testing
+/frontend/coverage
+
+# next.js
+/frontend/.next/
+/frontend/out/
+
+# production
+/frontend/build
+
+# misc
+/frontend/.DS_Store
+/frontend/*.pem
+
+# debug
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# local env files
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# vercel
+/frontend/.vercel
+
+### mobile
+/mobile/*.iml
+/mobile/local.properties
+/mobile/.idea/workspace.xml
+/mobile/.idea/libraries
+/mobile/.idea
+/mobile/.DS_Store
+/mobile/build
+/mobile/captures
+/mobile/.externalNativeBuild
+
+# config keys
+/frontend/config/serviceKey.json
+/frontend/config/initialConfig.js
+/backend/server/config/serviceKey.json
+/backend/server/.env

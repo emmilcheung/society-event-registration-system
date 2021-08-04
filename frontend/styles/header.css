@@ -1,0 +1,93 @@
+.header_header {
+  width: 100%;
+  box-shadow: 0 3.5px 2px -2px #dddddd;
+}
+.header_container {
+  display: grid;
+  grid-template:
+    "... .... ... ... ... ....... ... ..... ..." 8px
+    "... logo ... nav ... ...... ... ..... ..." 40px
+    "... .... ... ... ... ....... ... ..... ..." 8px / auto auto 1fr auto 6px;
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header_container > h2 {
+  grid-area: logo;
+  align-self: center;
+  height: 80%;
+}
+
+.header_container > nav {
+  grid-area: nav;
+}
+
+nav {
+  display: block;
+}
+
+.nav_container:not(.nav_tab) > ul {
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+}
+
+.nav_container:not(.nav_tab) > ul > li > * {
+  padding: 0 18px;
+}
+
+.nav_container:not(.nav_tab) > ul > li > a,
+.nav_container:not(.nav_tab) > ul > li > div {
+  font-weight: 700;
+  height: 100%;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #777777;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.nav_container .user_image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.nav_container .loading {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.nav_container .header_notification{
+  cursor: pointer;
+  position: relative;
+}
+
+.nav_container .notification_count{
+  position: absolute;
+  right: 50%;
+  top: 5%;
+  transform: translateX(100%);
+  background-color: red;
+  width: 13px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 0.8em;
+}
+
+@media (max-width: 945px) {
+  .header_header > .header_container {
+    width: 100%;
+  }
+}
+

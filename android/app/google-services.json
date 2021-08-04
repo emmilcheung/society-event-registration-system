@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "133524163100",
+    "firebase_url": "https://test-4b584.firebaseio.com",
+    "project_id": "test-4b584",
+    "storage_bucket": "test-4b584.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133524163100:android:e44d386c49b1b0f39fadd9",
+        "android_client_info": {
+          "package_name": "edu.cuhk.csci3310.cuevent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133524163100-23184j24cd0aj7h4boakc7ja9hpdv1uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.cuhk.csci3310.cuevent",
+            "certificate_hash": "39bfb6c2c3ce4a99b89e99caa0550d5c9f092ae2"
+          }
+        },
+        {
+          "client_id": "133524163100-nai1jcm6dvagr0795qmeent1o79ns2cj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.cuhk.csci3310.cuevent",
+            "certificate_hash": "491f48bc308458654b200d49b6751b4dc546a199"
+          }
+        },
+        {
+          "client_id": "133524163100-lcvgcrdv31fn6h6rducq46di8m4oi36g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx53b6zCmN-6FKwYvMEe9fLXHgjagDwZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133524163100-lcvgcrdv31fn6h6rducq46di8m4oi36g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

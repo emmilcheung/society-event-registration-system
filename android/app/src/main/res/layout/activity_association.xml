@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssociationActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/associationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+        <ImageView
+            android:id="@+id/associationImage"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/association"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/associationName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Shaw College"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/associationImage"
+            app:layout_constraintLeft_toRightOf="@id/associationImage"
+            app:layout_constraintTop_toTopOf="@id/associationImage"/>
+
+        <TextView
+            android:id="@+id/associationDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_margin="30dp"
+            android:text="It is interesting that the cultivation of virtue and the going more deeply into what one has learned are placed by Confucius at the head of the list of things that caused him concern. The reason is not far to seek. The former concerns one's moral character, while the latter is the way to new knowledge. A man of sound moral character eager to make new discoveries on the strength of existing knowledge is, in the eyes of Confucius, close to the ideal of the gentleman."
+            app:layout_constraintTop_toBottomOf="@id/associationImage"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

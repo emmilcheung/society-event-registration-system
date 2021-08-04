@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CU Event</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="normal_map">Normal</string>
+    <string name="hybrid_map">Hybrid</string>
+    <string name="satellite_map">Satellite</string>
+    <string name="terrain_map">Terrain</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

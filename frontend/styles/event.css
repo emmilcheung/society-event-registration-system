@@ -1,0 +1,292 @@
+.event_container {
+  color: var(--card-text);
+  background-color: var(--card-bg);
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.event_header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  padding: 1rem 1.25rem;
+  border-bottom: 3px solid var(--main-bg);
+}
+
+.event_header > a:first-of-type {
+  display: contents;
+}
+
+.event_header > a {
+  cursor: pointer;
+  color: var(--text-secondary);
+  -webkit-transition: background-color 0.1s cubic-bezier(1, 0, 0, 1);
+  transition: background-color 0.1s cubic-bezier(1, 0, 0, 1);
+}
+
+.event_header > a {
+  cursor: pointer;
+  color: var(--text-secondary);
+  -webkit-transition: background-color 0.1s cubic-bezier(1, 0, 0, 1);
+  transition: background-color 0.1s cubic-bezier(1, 0, 0, 1);
+}
+
+.event_header > a > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.event_header > a:first-of-type > h2 {
+  margin-left: 0.75rem;
+  font-size: 1rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.image-container {
+  position: relative;
+  height: auto;
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+}
+
+.image-container > img {
+  max-width: min(100%, 900px);
+  height: max(100%, 600px);
+  object-fit: cover;
+  overflow: auto;
+}
+
+.event_title {
+  padding: calc(1rem + 0.9vw) calc(1.5rem + 3vw);
+}
+
+.event_container nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.event_container > nav::-webkit-scrollbar {
+  display: none;
+}
+
+.event_container > nav > ul {
+  padding: 0 calc(1.5rem + 3vw);
+  display: -webkit-flex;
+  display: flex;
+}
+
+.event_container > nav > ul > li {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.event_container > nav > ul > li > a {
+  display: inline-block;
+  color: inherit;
+  padding: calc(1.275rem + 0.3vw) 1rem calc(1.2625rem + 0.15vw);
+  font-size: 0.9rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.event_container > nav > ul > li > a.event_active {
+  font-weight: 700;
+  border-bottom: 2px solid var(--text-secondary);
+}
+
+.date_btn {
+  padding: 5px calc(1.5rem + 3vw);
+}
+
+.date_btn_container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.date_btn_container .date {
+  cursor: pointer;
+  width: 100px;
+  height: 36px;
+  margin-right: 10px;
+  padding: 0 5px;
+  color: hsl(214, 89%, 52%);
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date_btn_container .date:hover {
+  background-color: #dadfe4;
+}
+
+.date_btn_container .date.selected {
+  background-color: #e7f3ff;
+}
+
+.details_container {
+  /* display: grid; */
+  /* grid-template-columns: 0.6fr 0.4fr; */
+  padding: calc(0.5rem + 0.9vw) calc(1.5rem + 3vw);
+  color: #000000;
+}
+
+.details_container .date,
+.details_container .venue,
+.details_container .host {
+  display: grid;
+  grid-template-columns: 0.12fr 0.88fr;
+  padding: 5px 0;
+}
+
+.details_container .date .icon,
+.details_container .venue .icon,
+.details_container .host .icon {
+  display: grid;
+  place-content: center;
+  color: #aaaaaa;
+}
+
+.details_container .date .text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.details_container .date .text .time,
+.details_container .venue .text .name,
+.details_container .host .text .name {
+  font-weight: 700;
+}
+
+.details_container .calendar_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.event_container .desc {
+  padding: calc(1rem + 0.5vw) calc(1.55rem + 3.6vw) calc(1.45rem + 2.4vw);
+}
+
+.desc .dangerous_text {
+  white-space: pre-wrap;
+  color: #000000;
+}
+
+.event_container .event_regisation {
+  padding: calc(1rem + 0.5vw) calc(1.55rem + 3.6vw) calc(1.45rem + 2.4vw);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2vh 1.5vw;
+}
+
+.event_container .event_regisation h1 {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.event_container .application_form {
+  font-size: 17px;
+  border: 1px solid var(--border-secondary);
+  padding: 8px 12px;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto auto 1fr auto auto auto;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4px;
+}
+
+.event_container .create_form {
+  height: auto;
+  min-height: 175px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.event_container .create_form .plus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.event_container .application_form dl {
+  grid-column: 1/3;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  grid-gap: 4px 8px;
+}
+
+.event_container .application_form dt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4e6ea;
+  background-color: #65676b;
+  font-size: 0.9em;
+  padding: 0 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.event_container .application_form p {
+  grid-column: 1/3;
+}
+
+.event_container .application_form button {
+  grid-column: 1/3;
+  line-height: 1;
+  padding: 10px 4px;
+  margin-top: 2vh;
+  align-self: flex-end;
+}
+
+.participant_container {
+  padding: calc(1rem + 0.5vw) calc(1.55rem + 3.6vw) calc(1.45rem + 2.4vw);
+}
+
+@media (min-width: 1200px) {
+  .event_container > nav > ul > li > a {
+    padding: 1.5rem 1rem 1.375rem;
+  }
+}
+
+@media (max-width: 945px) {
+  .image-container > img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 767.55px) {
+  .details_container .calendar_btn {
+    justify-content: center;
+  }
+}
