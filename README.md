@@ -13,13 +13,13 @@ This project presents a mobile responsive web application with search engine opt
 
 ## Main Feature
  - Login with CUHK OnePass (Single Sign On & 2FA verification)
- - Register association (Department/Organization/Society)
+ - Register association (Department & Organization & Society)
  - Association Profile
  - Create Event
  - Event Registration
- - Event Attendance
- - Survey/Feedback
- - Searching
+ - Event Attendance (Online & Ticket & Student ID card)
+ - Survey / Feedback
+ - Report Generation
  - Student Profile (History, Statistic, Recomendation)
  - Notification
 
