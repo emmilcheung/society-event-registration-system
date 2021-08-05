@@ -9,13 +9,6 @@ import Header from '../../components/Header';
 import EventContainer from '../../components/event/EventContainer'
 
 
-const mapStyles = {
-    width: '100%',
-    height: '100%'
-}
-
-
-
 const Event = ({ data }) => {
     const router = useRouter();
     const desc = useRef();

@@ -3,15 +3,17 @@ import React, { useState, useEffect, useRef } from "react";
 // external libraries
 import cookie from 'js-cookie';
 
-// next component
+// next components
 import { useRouter } from 'next/router';
 
-
+// material-ui components
 import { Button } from '@material-ui/core';
 import { config } from '../../config/initialConfig';
 
+// components
 import MaterialUITable from './MaterialUITable'
 
+// This is a that be render when user is the admin of the 
 const Participants = ({
     event,
     registrations,
